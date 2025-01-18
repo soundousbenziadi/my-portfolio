@@ -60,6 +60,11 @@
   /* navbar */
   nav{
     border-bottom: 1px solid #3f404f;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    height: 60px;
   }
   nav ul{
     display: flex;
@@ -111,16 +116,21 @@
     z-index: 5;
     display: none;
   }
+  #navbar ul li a{
+    height: 60px;
+  }
   /* home Section */
   #hero{
-    height: 90vh;
+    height: calc(100vh- 60px);
+    padding: 2rem 4rem;
   }
   .home-container{
+    margin-top: 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    height: 90vh;
+    height: calc(100vh - 60px - 4rem);
     width: 100%;
   }
   .img-container{
@@ -218,26 +228,34 @@
     #open-sidebar-button ,#close-sidebar-button{
       display: block;
     }
+    #open-sidebar-button{
+      position: fixed;
+      top: 10px;
+      left: 10px;
+      height: 60px;
+    }
     /* HOME */
+    #hero{
+      padding: 2rem 2rem;
+    }
     .home-container{
-      gap: 10px;
-      padding: 2rem 1rem;
       align-items: center;
     }
     .home-content{
       width: 100%;
       align-items: center;
     }
+    .home-heading-1{
+      font-size: 1.5rem;
+    }
     .home-heading-2{
       text-align: center;
+      font-size: 1.7rem;
     }
     .img-container{
       width: 100%;
     }
    .home-img{
-    width: 260px;
+    width: 240px;
    }
-    .home-btn-1 a,.home-btn-2 a{
-      font-size: 1.7rem;
-    }
   }
