@@ -47,3 +47,27 @@ function updateNavBar(e){
    }
    updateNavBar(media);
    media.addEventListener("change",(e)=>updateNavBar(e));
+   // skills-img-color-change
+   let skillsImgPaths=document.querySelectorAll(".skills-img path");
+   skillsImgPaths.forEach(path=>{
+      if (path.getAttribute('fill') === ('#e6e6e6')) {
+         path.setAttribute('fill', '#2f2e41');
+       }
+       if (path.getAttribute('fill') === '#8f03cb') {
+         path.setAttribute('fill', 'var(--accent)');
+       }
+   })
+// SKills width change when scroll to skills section
+window.addEventListener('scroll', function() {
+   const skillsSection = document.querySelector("#skills");
+   const loaders = document.querySelectorAll('.loader');
+   const widths = ["90%", "80%", "60%", "95%", "50%"];
+   const rect = skillsSection.getBoundingClientRect();//position relative to viewport
+   if (window.innerHeight-rect.top >=50 && rect.bottom >= 0) {
+     loaders.forEach(function(loader, i) {
+       loader.style.width = widths[i];
+     });
+   }
+ });
+ 
+    
