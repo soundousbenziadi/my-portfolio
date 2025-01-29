@@ -59,10 +59,10 @@ function updateNavBar(e){
    })
 // SKills width change when scroll to skills section
 window.addEventListener('scroll', function() {
-   const skillsSection = document.querySelector("#skills");
+   const skillsContent = document.querySelector(".skills-content");
    const loaders = document.querySelectorAll('.loader');
    const widths = ["90%", "80%", "60%", "95%", "50%"];
-   const rect = skillsSection.getBoundingClientRect();//position relative to viewport
+   const rect = skillsContent.getBoundingClientRect();//position relative to viewport
    if (window.innerHeight-rect.top >=50 && rect.bottom >= 0) {
      loaders.forEach(function(loader, i) {
        loader.style.width = widths[i];
