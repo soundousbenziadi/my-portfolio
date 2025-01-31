@@ -296,6 +296,38 @@
             </div>
         </div>
     </section>
+    <section id="contact">
+        <h2 class="contact-heading">Contact <span class="colored-txt">Me</span></h2>
+        <div class="contact-container">
+            <div class="contact-content">
+                <p class="contact-txt">
+                    I’m open to any communication! Feel free to contact me any convenient way! I’m always interested
+                    in hearing about new projects and opportunities.
+                </p>
+                <a href="mailto:benziadisoundous@gmail.com" class="email"><i class="fa-solid fa-envelope contact-icon">
+                    </i> benziadisoundous@gmail.com</a>
+                <div class="contact-icons">
+                    <a href="https://github.com/soundousbenziadi"><i class="fa-brands fa-github contact-icon"></i></a>
+                    <a href="https://www.linkedin.com/in/soundous-benziadi-73339b28"><i
+                            class="fa-brands fa-linkedin contact-icon"></i></a>
+                </div>
+            </div>
+            <div class="form-container">
+                <form class="contact-form" onsubmit="sendMail(event)">
+                    <div class="contact-form-first-row">
+                        <input type="text" id="name" placeholder="Name" required>
+                        <input type="email" id="email" placeholder="Email" required>
+                    </div>
+                    <input type="text" id="subject" placeholder="Subject">
+                    <textarea id="message" placeholder="Message"></textarea>
+                    <button type="submit" class="submit-btn" onclick="sendMail()">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+
     <script src="script.js"></script>
 </body>
 

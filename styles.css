@@ -29,6 +29,9 @@
     color: var(--text);
     font-family: var(--text-font);
   }
+  a{
+    text-decoration: none;
+  }
   /* theme-switch */
   #theme-switch{
     height: 60px;
@@ -289,6 +292,92 @@
   width: 0%;
   transition: width 3s ease-out; 
 }
+/* CONTACT */
+#contact{
+  padding: 2rem 4rem;
+}
+.contact-heading{
+  font-size:2.1rem;
+  margin-bottom: 2rem;
+}
+.contact-container{
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.contact-content{
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  height: 100%;
+  gap: 2rem;
+}
+.contact-icons{
+  display: flex;
+  gap: 2rem;
+}
+.contact-icon{
+  font-size: 1.5rem;
+  color: var(--accent);
+  transition: all 400ms ease;
+}
+.contact-icon:hover{
+  transform: scale(1.2);
+}
+.email{
+  color: var(--text);
+  size: 1.5rem;
+  font-weight: 600;
+}
+.form-container{
+  width: 60%;
+  display: flex;
+  justify-content: end;
+  height: 100%;
+}
+.contact-form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  gap: 1rem;
+  width: 80%;
+}
+.contact-form-first-row{
+  display: flex;
+  justify-content: stretch;
+  width: 100%;
+  gap: 1rem;
+}
+#subject,#message,#name,#email{
+  width: 100%;
+  background-color: #f5f5f5;
+  border: none;
+  padding: 1vw;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+#subject:focus,#message:focus,#name:focus,#email:focus{
+  outline: none;
+  background-color: #F4F4F4;
+  border: 1px solid var(--accent);
+}
+.contact-txt{
+  font-size: 1rem;
+  text-align: justify;
+}
+.submit-btn{
+  align-self: end;
+  padding: 1vw;
+  border: none;
+  background-color: var(--accent);
+  border-radius: 5px;
+  color: #F4F4F4;
+  cursor: pointer;
+}
+.submit-btn:hover{
+  background-color: var(--secondary);
+}
  /***************************************Media queries***********************************/
   @media (max-width:700px){
     /* NAVBAR */
@@ -380,7 +469,7 @@
   padding: 2rem 2rem;
   height: unset;
 }
-.skilss-container{
+.skills-container{
   align-items: center;
   gap: 40px;
   height: unset;
@@ -395,5 +484,26 @@ align-items: center;
 .skills-heading{
   font-size: 2rem;
   margin-bottom: 1rem;
+}
+/* contact */
+#contact{
+  padding: 2rem 2rem;
+}
+.contact-heading{
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.contact-container{
+  gap: 2rem;
+}
+.contact-content{
+  width: 100%;
+}
+.form-container{
+  width: 100%;
+  justify-content: center;
+}
+.contact-form{
+  width: 100%;
 }
   }

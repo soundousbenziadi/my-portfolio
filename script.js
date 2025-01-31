@@ -69,5 +69,29 @@ window.addEventListener('scroll', function() {
      });
    }
  });
- 
+ document.addEventListener("DOMContentLoaded", function () {
+   emailjs.init({
+       publicKey: "WjJRS1noxZFmTDnQd",
+   });
+});
+
+function sendMail(event) {
+   event.preventDefault(); 
+   let params = {
+       name: document.getElementById("name").value,
+       email: document.getElementById("email").value,
+       subject: document.getElementById("subject").value,
+       message: document.getElementById("message").value,
+   };
+
+   emailjs.send("service_hzvbt2q", "template_oag7g7w", params)
+       .then(function (response) {
+           alert("Email sent successfully!");
+       })
+       .catch(function (error) {
+           alert("Failed to send email. Please try again.");
+           console.error("Error:", error);
+       });
+}
+
     
