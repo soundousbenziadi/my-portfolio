@@ -5,7 +5,7 @@
 --primary: #cac7e5;
 --secondary:#730b88;
 --accent: #8f03cb;
---overlay:#c0b5efb1;;
+--overlay:#c0b5ef3d;;
 --text-font:"DM Sans", serif;
 --headings-font:"Noto Serif", serif;
   }
@@ -444,6 +444,9 @@ padding: 10px 15px;
   @media (max-width:700px){
     /* NAVBAR */
     nav{
+  backdrop-filter: blur(10px);
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
       position: fixed;
       left: -100%;
       top: 0;
