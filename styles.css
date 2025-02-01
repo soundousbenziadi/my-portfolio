@@ -379,6 +379,67 @@
 .submit-btn:hover{
   background-color: var(--secondary);
 }
+/* PROJECTS */
+#projects{
+  padding: 2rem 4rem;
+}
+.projects-heading{
+  font-size:2.1rem;
+  margin-bottom: 2rem;
+}
+.cards-container {
+  display: flex;
+  align-items: start;
+  width: 100%;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  height: 400px;
+  background:  #F9F9F9;
+  justify-content: space-around;
+  align-items: start;
+  border-radius: 15px;
+  padding: 2rem;
+  border: 2px solid transparent;
+}
+.card:hover{
+  border-color: #5773E8;
+}
+.card-img{
+  width: 100%;
+  height: 50%;
+  border-radius: 10px;
+}
+.card-type{
+width: fit-content;
+font-size: 1rem;
+background-color: #CEE9FD;
+color: #6D91BC;
+border-radius: 20px;
+padding: 10px 15px;
+}
+.card-arrow{
+  border-radius: 50%;
+  color: #5773E8;
+  border: 2px solid #5773E8;
+  padding: 0.3rem;
+  transform: rotate(-45deg);
+  transition: all 0.2s ease;
+}
+.card-arrow:hover{
+  background-color: #5773E8;
+  color: #fff;
+}
+.card-title{
+  font-size: 1.2rem;
+  color: #1d1a38;
+  font-weight: 600;
+}
  /***************************************Media queries***********************************/
   @media (max-width:700px){
     /* NAVBAR */
@@ -509,5 +570,13 @@ align-items: center;
 }
 .submit-btn{
   padding: 8px;
+}
+/* projects */
+#projects{
+  padding: 2rem;
+}
+.projects-heading{
+  font-size:2rem;
+  margin-bottom:1rem;
 }
   }
