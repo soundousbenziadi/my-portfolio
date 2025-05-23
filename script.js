@@ -61,7 +61,7 @@ function updateNavBar(e){
 window.addEventListener('scroll', function() {
    const skillsContent = document.querySelector(".skills-content");
    const loaders = document.querySelectorAll('.loader');
-   const widths = ["90%", "80%", "60%", "95%", "50%"];
+   const widths = ["90%", "80%", "60%", "95%", "30%","50%","80%"];
    const rect = skillsContent.getBoundingClientRect();//position relative to viewport
    if (window.innerHeight-rect.top >=50 && rect.bottom >= 0) {
      loaders.forEach(function(loader, i) {
